@@ -1,0 +1,308 @@
+/*==================Default values===========================
+
+  font-family : Roboto Condensed  
+
+  greenish blue : #34c4d3 ( boutton , icon , links , lines and backgrounds)
+  steel gray : #41464b (headings) 
+  blue bayoux : #64707B (paragraphs) 
+  white : #fff
+  black : #000
+
+
+
+===============================================================*/
+
+html,body
+{
+  height : 100%;
+  scroll-behavior: smooth;
+}
+body
+{
+
+  font-family: 'Roboto Condensed', sans-serif  !important;
+}
+
+p{
+  color :#64707B;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+h3
+{
+  text-transform: uppercase;
+  color: #41464b;
+}
+
+/*==================HOME SECTION===========================
+===============================================================*/
+
+#home{
+  height : 100%;
+}
+#cover
+{
+  height: 100%;
+  background-image: url("../img/hero.jpg") ;
+ 
+}
+
+#content
+{
+   width : 100%;
+   height : 100%; 
+   display : table;
+}
+
+#content-inner
+{
+  display : table-cell;
+  vertical-align:middle;
+  /*text-align:center;*/
+}
+
+#Heading h3{
+
+  color :#FFF;
+  font-size: 64px;
+  font-weight:700;
+  margin : 32px 0 32px 0; 
+}
+
+/*==================button (generic)===========================
+===============================================================*/
+
+.btn-general{
+  
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  font-size:16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding:16px 32px 16px 32px;
+}
+
+.btn-white{
+  border-color:#fff;
+  color:#fff;
+  
+}
+
+.btn-white:hover,
+.btn-white:focus{
+
+  background-color:#34c4d3; 
+  color:#000;
+  text-decoration: none;
+}
+
+.btn-pass{
+  background-color:white;
+  border: 1px #34c4d3 solid;
+  font-size:16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding:16px 32px 16px 32px;
+  color:#34c4d3;
+  border-color: #34c4d3 ;
+  text-decoration: none;
+ 
+  
+}
+
+.btn-pass:hover{
+  color:white;
+  background-color:#34c4d3 ;
+  text-decoration: none;
+}
+
+/*==================parralax (generic)===========================
+===============================================================*/
+
+.bg-paralax
+{
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:center;
+  background-attachment: fixed;
+}
+
+/*==================Animation===========================
+===============================================================*/
+#cover{
+  animation-duration: .5s;
+  animation-delay: .2s;
+
+}
+
+#Heading{
+  animation-duration: .5s;
+  animation-delay: .5s;
+}
+
+#home-btn{
+
+  animation-duration: .5s;
+  animation-delay: 1s;
+}
+
+/*==================Generic Content box===========================
+===============================================================*/
+
+.box-content 
+{
+
+  padding : 64px 0 64px 0;
+}
+
+.title-content h3{
+
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin : 0 0 32px 0;
+}
+
+.underline{
+
+  width:30px;
+  height:3px;
+  background-color: #34c4d3;
+  margin : 0 auto 32px auto;
+}
+
+/*==================Service Section===========================
+===============================================================*/
+
+.item{
+  padding :24px 0 24px 0;
+  margin-bottom : 20px ;
+  cursor:pointer; 
+}
+
+.Item-icon i{
+  
+  color:#34c4d3;
+  float:left;
+  padding : 16px;
+  margin-right:8px;  
+  text-align:center;
+}
+
+#splash
+{
+  top: -11em;
+  position: absolute;
+}
+
+.item:hover .Item-icon i{
+
+  color:#fff;
+  background-color: #34c4d3;
+   
+}
+
+.item-title h3{
+  font-size:24px;
+  font-weight: 400;
+  margin:0 0 16px 0;
+}
+
+.item-description p
+{
+  margin : 0;
+  padding-left: 80px;
+}
+
+.row
+ {
+   animation-delay: .5s;
+   animation-duration: 1s ;
+ }
+
+ .title-content h3{
+
+  animation-delay: .5s;
+  animation-duration: 1s;
+ }
+
+ .underline {
+   animation-duration:1s;
+   animation-delay:.5s;
+ } 
+
+ /*==================About Section===========================
+===============================================================*/
+
+#bg-diagonal
+{
+  width:60%;
+  float:right;
+  background-image: url(../img/bg.jpg);
+  border-left:200px solid #fff;
+  border-top: 700px solid transparent;
+}
+
+  #aboutcententbox
+  {
+    float:left;
+    height:400px;
+
+  }
+
+  #about-content-outer
+  {
+    width:100%;
+    height:100%;
+    display:table;
+  }
+
+  #about-content-inner{
+    display:table-cell;
+    vertical-align: middle;
+  }
+
+  #aboutus .title-content h3{
+
+    text-align: left ;
+    animation-duration: 1s;
+    animation-delay: .8s;
+  }
+
+  #marge
+  {
+    margin:0 0 32px 0;
+    animation-duration: 1s;
+    animation-delay: .8s;
+  }
+
+  #description p
+  {
+    margin-bottom : 32px; 
+    animation-duration: 1s;
+    animation-delay: .8s;
+  }
+
+
+   /*==================Work Section ===========================
+===============================================================*/
+
+.row.no-space [class*=col-]{
+
+padding-left:0;
+padding-right:0;
+}
+
+.wrap-img{
+  overflow: hidden;
+}
+
+.wrap-img img{
+  transition: transform .5s ease;
+}
+.wrap-img img:hover{
+
+  transform : scale(1.5);
+  cursor:zoom-in;
+}
